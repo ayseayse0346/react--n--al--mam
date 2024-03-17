@@ -20,7 +20,12 @@ const handleChange = ()=>{
   setFirstname("akif")
 } 
 
+const [count , setcount] = useState(0)
+const arttır = ()=>{
+  setcount(count+1)
+}
 
+console.log("component render edildi."); // her butona basıldığında bütün kodlar render ediliyor. bu kodlar tekrar çalışıyor. yani burdaki set değiştiğinde compenent tekarar çalışıyor. bunu önlemek için
   return (
  <div>
   {/* {firstName} {lastName} */}
@@ -43,6 +48,11 @@ const handleChange = ()=>{
 <div>
   {show ? <div>{userInfo.username} {userInfo.password}</div> : <div>bilgileri gösterme</div>}
 </div>
+<hr/>
+<div>
+<div>{count}</div>
+<div><button onClick={arttır}>Artır</button></div>
+</div>
  </div>
   )
 }
@@ -50,3 +60,5 @@ const handleChange = ()=>{
 export default App
 
 // !NOT : bir statein değerini set metodunu kullanarak değiştirdiğinde compenent yeniden render edilir.
+
+// ? Nedr bu  useState: aynı diğer proglamlama dillerinde olduğu gibi bir değişken tanımlamak için kullanılan bir hooks tur.useState(burda default değerini veririz.) vermiş olduğumuz default değer arrayın ilk indexindeki değişkene oturru. daha sonra bunun değerini değiştirmek için de bu fonksiyonu kullanırız setcount gibi . bu fonksiyonu kullanıp bu sattein değerini değiştirdiğimizde de bu sattetin kullanıldığı component yeniden render edilir.
