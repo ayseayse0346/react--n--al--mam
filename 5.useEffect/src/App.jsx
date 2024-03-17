@@ -14,7 +14,8 @@ useEffect(()=>{
 
 useEffect(()=>{
 console.log("compenent ilk render edildiğinde çalışır.");
-},[]) // ikinci parametresini boş array verdim.
+
+},[]) // ikinci parametresini boş array verdim. 
 
 useEffect(()=>{
 console.log("ilk render edildiğinde ve firstName state değeri değiştiğinde çalışır.");
