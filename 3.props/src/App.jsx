@@ -21,7 +21,9 @@ function App() {
  <div>
    <Container>
     <hr/>
-    <Product/>
+    <Product productNme="pantalon" price={900}/>
+    <hr/>
+    <Product productNme="ayakkabı" price={900}/>
     </Container>
  </div>
 
