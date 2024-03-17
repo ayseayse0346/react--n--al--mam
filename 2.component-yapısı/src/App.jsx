@@ -2,11 +2,12 @@ import { useState } from 'react'
 
 import './App.css'
 import Login from './login'
-
+import { users } from './login'
+import Hello from './Hello';
 
 function App() {
 
-
+console.log(users);
   return (
     
    <div>
@@ -15,7 +16,8 @@ function App() {
   <Login/>
   <hr/>
   <Login/>
-  
+  <hr/>
+  <Hello/>
    </div>
     
   )

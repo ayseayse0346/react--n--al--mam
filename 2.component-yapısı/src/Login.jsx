@@ -1,5 +1,17 @@
 import React from 'react'
 
+ export const users = [
+  {
+    userName :"ayse",
+    password:"1"
+  },
+  {
+userName:"akif",
+password:"2"
+  }
+]
+
+
 function Login() {
   return (
     <>
